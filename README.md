@@ -35,6 +35,8 @@ SolveSphere is an interactive chat application designed to help students work th
 
 ## Architecture
 
+![WhatsApp Image 2025-03-01 at 13 34 27](https://github.com/user-attachments/assets/6f1588d8-fb7c-4752-b9a2-1c4683211ad2)
+
 ### Overview
 
 The system is built with a modular, scalable architecture consisting of a backend API and a static frontend:
