@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>SolveSphere Minimal Chat</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <img
+                    src="https://solvesphere1615.s3.us-east-1.amazonaws.com/jack-anstey-XVoyX7l9ocY-unsplash.jpg"
+                    alt="Logo"
+                />
+                <span class="brand-text">SolveSphere</span>
+                <!-- Toggle button to collapse/expand the sidebar -->
+                <button class="toggle-btn" id="toggleSidebarBtn">
+                    &#9776;
+                </button>
+            </div>
+
+            <div class="nav-items">
+                <button class="nav-btn active">Chats</button>
+            </div>
+
+            <!-- Container for old chat sessions -->
+            <div id="chatList" class="chat-list"></div>
+
+            <button class="new-chat-sidebar-btn" id="newChatSidebarBtn">
+                New Chat
+            </button>
+
+            <!-- Logout button, placed at the bottom of the sidebar -->
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+
+        <!-- Main area -->
+        <div class="main">
+            <!-- Minimal header (optional) -->
+            <div class="main-header">
+                <h1>SolveSphere</h1>
+            </div>
+
+            <!-- Single hero section with text in center -->
+            <div class="hero-content">
+                <h2 class="hero-title">Welcome, DSA Enthusiast!</h2>
+                <p class="hero-subtitle">
+                    Need help with your coding challenges?
+                </p>
+                <p class="hero-desc">
+                    I'm here to guide you through data structures, algorithms,
+                    and problem-solving tips. Let’s level up your skills
+                    together!
+                </p>
+            </div>
+
+            <!-- Chat container (hidden until new chat starts) -->
+            <div class="chat-container" style="display: none">
+                <div id="chatHistory" class="chat-history"></div>
+                <div id="loading" class="loading">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+
+            <!-- Bottom input area for new chat fields + doubt + send icon button -->
+            <div class="input-bar">
+                <form id="chatForm">
+                    <div id="newChatFields" class="new-chat-fields">
+                        <input type="text" id="userId" placeholder="User ID" />
+                        <input
+                            type="url"
+                            id="leetcodeUrl"
+                            placeholder="LeetCode URL"
+                        />
+                        <select id="skillLevel">
+                            <option value="" disabled selected>
+                                Skill Level
+                            </option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    <textarea
+                        id="doubt"
+                        placeholder="Type your doubt here..."
+                    ></textarea>
+                    <button type="submit" class="send-btn">
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/786/786205.png"
+                            alt="Send"
+                        />
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

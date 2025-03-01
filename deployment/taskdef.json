@@ -1,0 +1,37 @@
+{
+  "family": "dsa-teaching-assistant-task",
+  "networkMode": "awsvpc",
+  "executionRoleArn": "arn:aws:iam::<Account_ID>:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::<Account_ID>:role/taskRole",
+  "containerDefinitions": [
+    {
+      "name": "dsa-teaching-assistant",
+      "image": "Container_Image_URL",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 5000,
+          "hostPort": 5000,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {
+          "name": "OPENAI_API_KEY",
+          "value": "OpenAI_API_Key_Value"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/dsa-teaching-assistant",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512"
+}
