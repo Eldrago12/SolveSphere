@@ -1,5 +1,9 @@
 # SolveSphere – DSA Teaching Assistant Chat
 
+
+<img width="1680" alt="Screenshot 2025-03-01 at 2 47 09 PM" src="https://github.com/user-attachments/assets/48ddc617-81e7-4b97-9c34-05f7b4502d29" />
+
+
 (http://solvesphere1615.s3-website-us-east-1.amazonaws.com/)
 
 SolveSphere is an interactive chat application designed to help students work through LeetCode problems. It uses a GPT-based teaching assistant to guide users with hints, questions, and strategies—without providing complete solutions. The application leverages a hybrid solution combining LangChain for real-time conversation context and prompt chaining with DynamoDB for long‑term conversation history storage. The entire system is containerized using Docker and deployed on AWS ECS/ECR for scalable and modular operations, while the frontend is hosted as a static website on S3 (with CloudFront in front for improved performance and security).
