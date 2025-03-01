@@ -123,11 +123,14 @@ body:hover {
     box-shadow: 0 0 8px rgba(52, 199, 89, 0.4);
 }
 
-/* Logout button styling */
+/* Move "Logout" Button to the Bottom Without Changing Anything Else */
 .logout-btn {
-    margin: 10px auto 10px auto;
+    position: absolute;
+    bottom: 20px; /* Adjusts spacing from bottom */
+    left: 50%;
+    transform: translateX(-50%);
     padding: 12px;
-    background: #d9534f;
+    background: #d9534f; /* Red */
     color: #fff;
     border: none;
     border-radius: 12px;
