@@ -139,7 +139,7 @@ The system is built with a modular, scalable architecture consisting of a backen
 
 1. **Clone the Repository (if not already cloned):**
    ```bash
-   git clone https://github.com/your-username/solvesphere.git
+   git clone https://github.com/Eldrago12/SolveSphere.git
    cd SolveSphere/frontend
    ```
 
