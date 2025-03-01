@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function fetchSessions(user_id) {
     fetch(
-      `http://44.192.97.35:5000/api/session?user_id=${encodeURIComponent(user_id)}`,
+      `http://98.82.162.220:5000/api/session?user_id=${encodeURIComponent(user_id)}`,
     )
       .then((response) => response.json())
       .then((data) => {
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     newChatFields.style.display = "none";
     const user_id = userIdInput.value.trim();
     fetch(
-      `http://44.192.97.35:5000/api/history?user_id=${encodeURIComponent(user_id)}&session_id=${encodeURIComponent(session.session_id)}`,
+      `http://98.82.162.220:5000/api/history?user_id=${encodeURIComponent(user_id)}&session_id=${encodeURIComponent(session.session_id)}`,
     )
       .then((response) => response.json())
       .then((data) => {
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
       payload.session_id = session_id;
     }
 
-    fetch("http://44.192.97.35:5000/api/query", {
+    fetch("http://98.82.162.220:5000/api/query", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
