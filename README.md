@@ -1,7 +1,8 @@
 # SolveSphere – DSA Teaching Assistant Chat
 
 
-<img width="1680" alt="Screenshot 2025-03-01 at 2 47 09 PM" src="https://github.com/user-attachments/assets/48ddc617-81e7-4b97-9c34-05f7b4502d29" />
+<img width="1680" alt="Screenshot 2025-03-01 at 4 11 33 PM" src="https://github.com/user-attachments/assets/e44043a0-11e5-4d81-8d2b-8990572dad95" />
+
 
 
 
