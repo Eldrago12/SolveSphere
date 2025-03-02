@@ -180,17 +180,17 @@ The system is built with a modular, scalable architecture consisting of a backen
 
 ### API Endpoints
 
-- POST http://98.82.162.220:5000/api/query:
+- POST  https://shadow-274460218.us-east-1.elb.amazonaws.com/api/query:
   Handles sending a new message or continuing a conversation.
   Payload: { user_id, session_id (optional), leetcode_url (optional), question, skill_level }
   Response: { answer, session_id }
 
-- GET http://98.82.162.220:5000/api/session:
+- GET   https://shadow-274460218.us-east-1.elb.amazonaws.com/api/session:
   Retrieves all session IDs for a given user.
   Query Parameters: user_id
   Response: An array of session IDs.
 
-- GET http://98.82.162.220:5000/api/history:
+- GET   https://shadow-274460218.us-east-1.elb.amazonaws.com/api/history:
   Retrieves the conversation history for a specific session.
   Query Parameters: user_id, session_id
   Response: An array of message objects.
